@@ -1,4 +1,4 @@
-package main
+package chat
 
 import (
 	"bytes"
@@ -9,15 +9,16 @@ import (
 )
 
 type Models struct {
-	gpt4o     string
-	geminiPro string
+	Gpt4o     string
+	GeminiPro string
+	
 	//ClaudeSonnet-3.5
-	claudeSonnet string
-	basic        any
+	ClaudeSonnet string
+	Basic        any
 }
 
 type Modes struct {
-	imageGeneration AgentMode
+	ImageGeneration AgentMode
 }
 
 const (
@@ -32,14 +33,14 @@ var (
 	CLIENT = http.Client{}
 
 	MODELS = Models{
-		gpt4o:        "gpt-4o",
-		geminiPro:    "gemini-pro",
-		claudeSonnet: "claude-sonnet-3.5",
-		basic:        nil,
+		Gpt4o:        "gpt-4o",
+		GeminiPro:    "gemini-pro",
+		ClaudeSonnet: "claude-sonnet-3.5",
+		Basic:        nil,
 	}
 
 	MODES = Modes{
-		imageGeneration: AgentMode{
+		ImageGeneration: AgentMode{
 			Mode: true,
 			ID:   "ImageGenerationLV45LJp",
 			Name: "Image Generation",
