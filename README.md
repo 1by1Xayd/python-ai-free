@@ -19,7 +19,7 @@ Image generation:
 from freeai4everyone import Chat, Message, MODES
 
 # Create a chat instance
-chat = Chat(model="gpt-4o")
+chat = Chat(model="gemini-pro")
 
 # Enable image generation mode
 chat.agent_mode = MODES.IMAGE_GENERATION
