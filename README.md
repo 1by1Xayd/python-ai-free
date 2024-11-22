@@ -8,7 +8,7 @@ from freeai4everyone import Chat, Message
 chat = Chat(model="gpt-4o")
 
 # Send a message
-response = chat.send_message(Message(content="What is the weather today?", role="user"))
+response = chat.send_message(Message(content="Hello silly bot", role="user"))
 
 # Print the response
 print(response)
